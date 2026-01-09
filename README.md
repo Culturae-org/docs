@@ -1,4 +1,4 @@
-# 📚 Culturae Documentation
+# Culturae Documentation
 
 Welcome to the source code for the **Culturae Documentation**.
 
