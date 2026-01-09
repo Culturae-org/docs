@@ -3,6 +3,13 @@ name: Deploy Docs
 on:
   push:
     branches: [main]
+    paths:
+      - "docs/**"
+      - "package.json"
+      - "yarn.lock"
+      - ".github/workflows/deploy.yml"
+      - "flake.nix"
+      - "flake.lock"
 
 permissions:
   contents: write
@@ -22,7 +29,9 @@ jobs:
         run: yarn install
 
       - name: Build Docs
-        run: yarn build
+        run: |
+          yarn build
+          touch docs/.vitepress/dist/.nojekyll
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
