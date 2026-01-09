@@ -1,0 +1,1 @@
+import{_ as t,c as o,o as a,ag as n}from"./chunks/framework.BCFlG0KT.js";const _=JSON.parse('{"title":"Culturae","description":"","frontmatter":{},"headers":[],"relativePath":"en/intro.md","filePath":"en/intro.md"}'),r={name:"en/intro.md"};function i(c,e,s,l,u,p){return a(),o("div",null,[...e[0]||(e[0]=[n("",5)])])}const h=t(r,[["render",i]]);export{_ as __pageData,h as default};
